@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:ns="http://www.example.com/ns" xmlns="http://www.example.com/default">
+	<item id="1">
+		<name>
+			Item 1
+		</name>
+		<description>
+			<![CDATA[This is a description with <markup>.]]>
+		</description>
+		<details>
+			<detail key="created">
+				2024-02-01
+			</detail>
+			<detail key="author">
+				Author Name
+			</detail>
+		</details>
+	</item>
+	<item id="2">
+		<name>
+			Item 2
+		</name>
+		<description>
+			<![CDATA[Another item, with CDATA containing <tags> and &entities;.]]>
+		</description>
+		<details>
+			<detail key="created">
+				2024-02-02
+			</detail>
+			<detail key="author">
+				Another Author
+			</detail>
+			<complex>
+				<nested level="1">
+					<nested level="2">
+						<value>
+							Deeply nested value
+						</value>
+					</nested>
+				</nested>
+			</complex>
+		</details>
+	</item>
+</root>
